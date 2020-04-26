@@ -1,0 +1,417 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body{
+    
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+
+
+.namn {
+    display: none;
+}
+
+.show {
+    display: block;
+    height: 100px;
+}
+#icon1{
+    float: left;
+    
+}
+
+
+
+
+img{
+    max-width: 100%;
+}
+figure{
+    color: white;
+}
+figure p{
+    float: left;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.main-nav ul{
+    display: grid;
+    grid-gap: 5px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow:  0 2px 10px rgba(104,104,104,0.8); 
+    
+}
+.main-nav ul ul{
+    position: absolute;
+    min-width: 270px;
+    background: lightgrey;
+    display: none;
+}
+
+.main-nav ul li{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+    line-height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+h3{ 
+    color: black;
+    
+}
+.main-nav a{
+    background:rgb(138, 138, 138);
+    display: block;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+    color: white;
+    transform: inherit;
+    font-size: 1.1rem;
+}
+.main-nav ul li ul li{
+    
+    position: relative;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+       
+}
+
+
+
+.main-nav ul li i {
+      color: wheat;
+      float: right;
+      padding-left: 18px;
+}
+.main-nav div{
+      background: lightgrey;
+      color: #292929;
+      font-size: 24px;
+      padding: 0.6em;
+      cursor: pointer;
+      display: none;
+}
+.main-nav a:hover{
+    background: lightblue;
+    color: white;
+        
+}
+
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+
+      
+}
+#välkommen{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: pink;
+    font-family: serif;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+#vText {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    color: pink;
+    font-family: serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+ h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: white;
+}
+
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: white;
+}
+.info
+{
+    background-image: url(silver.jpg    );
+    text-align: inherit;
+    padding: 3rem;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    box-shadow:  0 2px 60px rgba(104,104,104,0.8); 
+    border-radius: 3%;
+  
+}
+/* här börjar projekt design*/
+.info-pro
+{
+    background-image: url(BGP.jpg);
+    text-align: inherit;
+    padding: 3rem;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow:  0 2px 60px rgba(104,104,104,0.8); 
+    border-radius: 3%;
+  
+}
+
+#info-pro-h2-1{
+    
+    color: whitesmoke;
+
+}
+#info-pro-h2-2{
+    
+    color: whitesmoke;
+}
+#info-pro-p1{
+    
+    color: whitesmoke;
+}
+#info-pro-p2{
+    
+    color: whitesmoke;
+}
+.projekt img{
+   height: 300px;
+   width: 400px;
+   
+
+}
+
+.projekt h2{
+    text-align: left;
+}
+.contact{
+    color: white;
+}
+#beskrivning{
+    height: 200px;
+    width: 300px;
+    
+}
+.map{
+   color: white;
+}
+#mapp {
+    width: 300px;
+   height: 350px; 
+   border:0 ;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    float: left;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .container {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text {
+    background-color: silver;
+    color: navy;
+    font-size: 10px;
+    padding: 16px 32px;
+  }
+
+
+
+@media(max-width: 700px){
+    .top-container{
+        grid-template-areas: 
+           'slide';
+    }
+    #top-container-h1{
+        font-size:2.5rem;
+
+    }
+ 
+   
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .main-nav ul li ul li{
+        grid-template-columns: 1fr;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .info-pro{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+ 
+@media(max-width: 768px) {
+      .main-nav div {
+            display: block;
+      }
+ 
+     .main-nav ul {
+            display: none;
+            position: static;
+            background: black;
+      }
+ 
+      .main-nav ul li {
+            display: block;
+      }
+ 
+      .main-nav ul ul {
+            position: static;
+            background: #e3e3e3;
+      }
+}
+
+
+
+footer{
+
+    margin-top: 0.1rem;
+    background: rgb(138, 138, 138);
+    color: white;
+    text-align: center;
+    padding: 0.01rem;
+}
+
+
+#SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 25%;
+    padding: 10px;
+    border-radius: 200px;
+}
+#infoOmSalle{
+    background: rgba(17, 17, 17, .3);
+    width: 50%;
+    height: 10%;
+    margin: auto 10%;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+}
+
+
+._14 {
+font-size: 1.3em;
+}
+ul {
+    padding: 0;
+    list-style: none;
+    
+}
+.footer-sociala-ikoner {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.sociala-ikoner {
+    color: beige;
+}
+ul.sociala-ikoner {
+    margin-top: 5%;
+}
+.sociala-ikoner li {
+    vertical-align: top;
+    display: inline;
+    
+}
+.sociala-ikoner a {
+    color:burlywood;
+    text-decoration: none;
+}
+ .facebook, .twi, .insta{
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+    border-radius: 50%;
+} 
+ 
+
+.insta:hover {
+    background-color:brown;
+    }
+.twi:hover {
+    background-color: #00aced;
+}
+.facebook:hover {
+    background-color: dodgerblue;
+}
